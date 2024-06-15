@@ -3,9 +3,606 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>bus-ticket-website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+ <main>
+ <section id="home-screen">
+    <header>
+        <div class="flex justify-around  mb-5 mt-2">
+            <div>
+                <p class="text-4xl font-bold">P-Ticket</p>
+            </div>
+            <div>
+                <div role="tablist" class="tabs">
+                    <a role="tab" class="tab text-lg ">Home</a>
+                    <a role="tab" class="tab text-lg tab-active">About</a>
+                    <a role="tab" class="tab text-lg">Destination</a>
+                    <a role="tab" class="tab text-lg">Search</a>
+                </div>
+            </div>
+            <div>
+                <button class="btn bg-lime-100">
     
+                   <div class="flex justify-center align-center space-x-2">
+                    <div class="text-xl font-medium text-green-600">Bus</div>
+                    <div><img src="images/bus-icon.png" alt=""></div>
+                   </div>
+                  </button>
+            </div>
+        </div>
+    </header>
+   <section>
+    <div>
+                       <!-- hero part -1  -->
+        <div class="hero min-h-screen font-raleway" style="background-image: url(images/banner.png);">
+            <div class=""></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">End-to-End Travel</h1>
+                <h2 class="text-5xl font-bold mb-3 text-[#1DD100]">P Paribahan</h2>
+                <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn border-none bg-[#1DD100] text-black font-bold  scroll-smooth"> <a href="#scroll">Buy Tickets</a></button>
+               <!-- <a href="#scroll" class="btn border-none bg-[#1DD100] text-black font-bold scroll-smooth">Buy Tickets</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+               <!-- hero part -2  -->         
+    <div>
+    <div class="flex justify-center items-center mx-24 gap-4 font-inter border-red-500">
+        <div class=" bg-slate-100 w-80 h-36 rounded-3xl border-b-4 border-green-400">
+            <div class="flex space-x-2.5 p-10">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h1 class="text-4xl font-bold mb-1">500K+</h1>
+                    <p class="text-slate-400">Registered users</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-100 w-80 h-36 rounded-3xl border-b-4 border-green-400">
+            <div class="flex space-x-2.5 p-10">
+                <img src="images/stoppage.png" alt="">
+                <div>
+                    <h1 class="text-4xl font-bold mb-1">1.7 lacks</h1>
+                    <p class="text-slate-400">Tickets sold</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-100 w-80 h-36 rounded-3xl border-b-4 border-green-400">
+            <div class="flex space-x-2.5 p-10">
+                <img src="images/ticket-cupon.png" alt="">
+                <div>
+                    <h1 class="text-4xl font-bold mb-1">80K+</h1>
+                    <p class="text-slate-400">Rental partners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   </section>
+                 <!-- Best offers  -->
+<section class="mt-10">
+   <h3 class="text-4xl font-semibold text-center font-raleway">Best offers for you</h3>
+ <div class="mt-10">
+  <div class="flex gap-10 justify-center items-center">
+    <div class="flex w-[30%] bg-[#FFBF0F] rounded-2xl p-10 gap-x-12 h-[218px]">
+        <div class="font-inter">
+            <h1 class="text-4xl font-inter font-extrabold">15% OFF</h1>
+            <p class="">on your next purchase</p>
+            <p class="text-slate-500">use by January 2024</p>
+        </div>
+        <div >
+            <div class="-mt-10">
+                <img src="images/cupon-devider.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h1 class="text-3xl font-bold font-raleway">NEW15</h1>
+            <p class="text-slate-500">Coupon Code</p>
+        </div>
+    </div>
+    <div class="flex w-[30%] bg-[#FFBF0F] rounded-2xl p-10 gap-x-12 h-[218px]">
+        <div class="font-inter">
+            <h1 class="text-4xl font-inter font-extrabold">20% OFF</h1>
+            <p>on your next purchase</p>
+            <p class="text-slate-500">use by January 2024</p>
+        </div>
+        <div class="">
+            <div class="-mt-10">
+                <img src="images/cupon-devider.png" alt="">
+            </div>
+
+            
+        </div>
+        <div>
+            <h1 class="text-3xl font-bold font-raleway">Couple20</h1>
+            <p class="text-slate-500">Coupon Code</p>
+        </div>
+    </div>
+  </div>
+</div>
+ <div class="flex justify-center items-center mt-10">
+    <!-- button see more -->
+    <button class="btn text-[#1DD100] ">See All Offers</button>
+ </div>
+</section>
+        
+
+                <!-- P.H Paribahan -->
+<section id="scroll" class="mt-32  border-t-4 rounded-3xl border-green-400">
+    <div>
+        <h3 class="text-4xl font-semibold text-center mt-6">P.H Paribahan</h3>
+        <p class="text-slate-400 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined.</p>
+    </div>
+</section>
+           <!-- Greenline Paribahan -->
+<section class="mt-16 ">
+    <div class="flex justify-center gap-12">
+        <div class="">
+            <div class="flex ">
+                <div class="flex gap-x-16">
+                    <div><img src="images/bus-logo.png" alt=""></div>
+                <div>
+                    <p class="text-2xl font-bold">Greenline Paribahan</p>
+                    <p class="text-lg">Coach-009-WEB ! AC_Business</p>
+                </div>
+                </div>
+                <div class="ml-16">
+                    <div class="text-lg"><button class="btn text-lg">
+                        <img src="images/seat-green.png" alt="">
+                        <span id="decrease-seat" class="text-lg">40</span> Seats left
+                        </button></div>
+                </div>
+            </div>
+            <div class="flex justify-between items-center gap-6 bg-[#F7F8F8] rounded-lg mt-10">
+                <div class="">
+                    <p class="m-6">Route</p>
+                    <p class="m-6">Dhaka - Sylhet</p>
+                </div>
+             
+                <div class="">
+                    <p class="m-6 ">Departure Time</p>
+                    <p class="m-6 ">9:00 PM</p>
+                </div>
+            
+          </div>
+          <div>
+            <div class="flex gap-16  mt-8">
+
+                <div class="bg-[#F7F8F8] rounded-lg p-4"><p>Boarding Point - Laxmipur</p></div>
+                <div  class="bg-[#F7F8F8] rounded-lg p-4"><p>Dropping Point - Bogura</p></div>
+                <div  class="bg-[#F7F8F8] rounded-lg p-4"><p>Est. Time - 11 Hour</p></div>
+
+            </div>
+        </div>
+          <!-- box -->
+           
+        </div>
+    
+        <!-- border -->
+         <div>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+            <p class="text-[#1DD100]">|</p>
+         </div>
+    
+         <div class="p-10">
+            <img src="images/fare.png" alt="">
+            <p  class="text-4xl font-bold"> <span id="per-set-price">550</span> Taka</p>
+            <p class="text-2xl font-semibold text-gray-500">Per Seat</p>
+         </div>
+    </div>
+</section>
+
+<!-- Select Your Seat -->
+ <section class="mt-5  p-72 border-gray-50 rounded ">
+    <div class="flex  gap-28">
+        <div>
+            <h3 class="text-2xl font-semibold mb-5">Select Your Seat</h3>
+            <p class="text-gray-400 mb-2">-------------------------------------------------------------------------------</p>
+            <div class="flex justify-between items-center gap-56">
+                <div class="flex">
+                    <img src="images/seat-gray.png" alt="">
+                    <p>Available</p>
+                </div>
+                <div class="flex">
+                    <img src="images/seat-green.png" alt="">
+                    <p class="text-[#1DD100]">Selected</p>
+                </div>
+            </div>
+
+         <p  class="text-gray-400">------------------------------------------------------------------------------</p>
+         <div class="flex justify-end m-11">
+            <button class="btn w-20"><img src="images/Vector.png" alt=""></button>
+         </div>
+
+         <!-- seat button distribution -->
+          <div class="flex gap-12">
+            <div class="gap-3">
+                <div class="mb-12"><p>A</p></div>
+                <div class="mb-12"><p>B</p></div>
+                <div class="mb-12"><p>C</p></div>
+                <div class="mb-12"><p>D</p></div>
+                <div class="mb-16"><p>E</p></div>
+                <div class="mb-16"><p>F</p></div>
+                <div class="mb-16"><p>G</p></div>
+                <div class="mb-8"><p>H</p></div>
+                <div class="mb-12"><p>I</p></div>
+                <div class="mb-12"><p>J</p></div>
+             
+            </div>
+            <div>
+               
+                <div class="flex gap-16">
+                    <div class="gap-8">
+                        <div class="flex gap-8 mb-5">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">A1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">A2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">B1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">B2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">C1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">C2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">D1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">D2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">E1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">E2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">F1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">F2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">G1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">G2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">H1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">H2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">I1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">I2</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">J1</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">J2</button>
+                            </div>
+                        </div>
+                      
+                     
+                    </div>
+    
+                    <!-- second part -->
+                    
+                    <div class="gap-8">
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">A3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">A4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">B3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">B4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">C3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">C4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">D3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">D4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">E3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">E4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">F3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">F4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">G3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">G4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">H3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">H4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">I3</button>
+                            </div>
+                            <div>
+                                <button id="" class=" btn w-20 text-gray-400">I4</button>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 mb-7">
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">J3</button>
+                            </div>
+                            <div>
+                                <button id="" class="btn-add btn w-20 text-gray-400">J4</button>
+                            </div>
+                        </div>
+                     
+                     
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           <p>|</p>
+           
+        
+        </div>
+        <!-- seclect your Seat part-2 -->
+        <div>
+            <p class="text-2xl font-semibold mb-4">Select Your Seat</p>
+            <p class="text-gray-400 mb-4">------------------------------------------------------</p>
+
+            <div class="flex justify-between items-center">
+                <p class="font-medium ">Seat<span id="increase-seat" class="bg-[#1DD100] ml-1 rounded p-2">0</span></p>
+                <p class="font-medium">Class</p>
+                <p class="font-medium">Price</p>
+            </div>
+            <p  class="text-gray-400 mb-4">-------------------------------------------------------</p>
+            <div class="flex justify-between items-center ">
+                <p class="text-gray-500">C2</p>
+                <p class="text-gray-500">Economoy</p>
+                <p class="text-gray-500">550</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <p class="text-gray-500">C2</p>
+                <p class="text-gray-500">Economoy</p>
+                <p class="text-gray-500">550</p>
+            </div>
+            <!-- append section -->
+             <div id="append-container">
+
+             </div>
+            <p  class="text-gray-400 mb-4 mt-3">-------------------------------------------------------</p>
+            <div class="flex justify-between items-center font-medium">
+                <p class="mb-4">Total Price</p>
+                <p>BDT <span id="total-price">0</span></p>
+            </div>
+            <!-- button field -->
+
+            <label class="input input-bordered flex items-center gap-2 mb-4">
+                <input id="coupon-code" type="text" class="grow" placeholder="Have any coupon?" />
+           <div class="flex items-stretch">
+                    <a onclick="grandTotal('apply-btn')" id="apply" class="apply-btn btn btn-ghost rounded-btn bg-[#1DD100]" disabled>Apply</a>
+                    
+                  </div>
+              </label>
+         
+              <div class="flex justify-between items-center">
+                <p class="mb-4 font-medium">Grand Total</p>
+                <p class="mb-4 font-medium">BDT <span id="grand-total" class="mb-4 font-medium">0</span></p>
+              </div>
+             <!-- another input field  -->
+
+             <div>
+                <label  for="" class="mb-4 font-medium">Passenger Name*
+                    <input id="passenger-field" type="text" placeholder="Enter your name" class="input input-bordered w-full mt-4 required:"required />
+                </label>
+               <div>
+                <label  for="" class="mb-4 font-medium">Phone Number*
+                    <input id="phoneNumber-filed" type="number" placeholder="Enter your phone number" class="input input-bordered w-full  mt-4 required:" required />
+                </label>
+
+               </div>
+                
+                <div>
+                    <label for="" class="font-medium">Email ID
+                        <input type="text" placeholder="Enter your email id" class="input input-bordered w-full  mt-4 required:" />
+                    </label>
+                </div>
+             </div>
+
+             <!-- end field -->
+              <div>
+                <button onclick="changingPage()" id="next-btn" class="btn btn-wide  w-full mt-5 bg-[#1DD100] " disabled>Next</button>
+              </div>
+
+              <!-- link -->
+               <div class="flex justify-between items-center mt-5">
+                <a class="link">Terms and Conditions</a>
+                <a class="link">Cancellation Policy</a>
+               </div>
+        </div>
+    </div>
+ </section>
+
+ <footer class="bg-black w-full p-20">
+
+    <div class="flex justify-between items-center text-white">
+        <div>
+            <h3 class="text-3xl font-extrabold mb-2">P-Ticket</h3>
+            <p class="text-gray-300">P-Ticket is a digital platform to make your daily commuting better.</p>
+        </div>
+        <div>
+            <p class="mb-3">Download our app</p>
+            <div class="flex p-1 bg-white rounded-lg text-black">
+                <img src="images/playstore.png" alt="">
+                <div>
+                    <p class="text-xs font-extrabold">GET IN IT</p>
+                    <p class="font-extrabold text-lg">Google play</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+  <p class="text-center mt-10 text-gray-500">---------------------------------------------------------------------------------------------------------------------</p>
+      <div class=" flex justify-between items-center text-white">
+        <div><p class="text-gray-300">@all rights reserved, P-Ticket services limited.2024</p></div>
+        <div class="flex gap-6 mt-5">
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+        </div>
+      </div>
+ </footer>
+</section>
+<!-- outPut section show -->
+ <section id="output-section" class="hidden">
+    <div class="h-screen flex items-center justify-center bg-gray-300 ">
+     <div class="bg-white p-3 rounded-2xl">
+         <div>
+             <div class="flex justify-center items-center">
+               <img  src="images/success.png" alt="">
+             </div>
+           <p class="text-[#27AE60] text-xl mt-5 mb-4 text-center">SUCCESS</p>
+           <p class="text-center font-bold">Thank you for Booking Our Bus Seats. 
+           <p class="text-center font-bold">We are working hard to find the best service and deals for you.</p>
+           <p class="text-center text-sm text-gray-400 mt-3">Shortly you will find a confirmation in your email.</p>
+            <div class="flex justify-center items-center mt-4 ">
+             <button onclick="changingPage()" id="continue" class="btn btn-wide bg-[#27AE60] rounded-3xl">Continue</button>
+            </div>
+       </div>
+     </div>
+    </div>
+</section>
+</main>
+
+<script src="js/app.js"></script>
 </body>
 </html>
